@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtl-intel"
+version = "0.1.0"
+description = "Dependency-free RTL linting and design-intelligence CLI for Verilog/SystemVerilog"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "RTL Intel contributors" }]
+keywords = ["verilog", "systemverilog", "rtl", "lint", "eda"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.scripts]
+rtl-intel = "rtl_intel.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
