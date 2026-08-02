@@ -1,6 +1,6 @@
-# RTL Intel
+# RTL Lint + Design Analysis Tool
 
-RTL Intel is a dependency-free RTL lint and design-intelligence tool for a practical subset of Verilog and SystemVerilog. It finds common design-quality problems, extracts module hierarchy, produces machine-readable JSON, and generates a concise natural-language design overview.
+RTL Lint + Design Analysis Tool is a dependency-free RTL lint and design-intelligence tool for a practical subset of Verilog and SystemVerilog. It finds common design-quality problems, extracts module hierarchy, produces machine-readable JSON, and generates a concise natural-language design overview.
 
 It is intentionally small enough to understand end to end: the project demonstrates parsing, source-aware static analysis, RTL-specific lint rules, hierarchy construction, reporting, CLI design, automated tests, and CI without hiding the core logic behind a parser dependency.
 
